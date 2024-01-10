@@ -1,0 +1,336 @@
+#salon_mv {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media screen and (max-width: 768px) {
+            top: 41%;
+        }
+        img {
+            width: 280px;
+            @media screen and (max-width: 768px) {
+                width: 167px;
+            }
+        }
+    }
+    .flex {
+        align-items: center;
+    }
+    .salon_mv_left {
+        width: 45.833%;
+        height: 30vw;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: 768px) {
+            width: 89.74%;
+            height: 280px;
+        }
+    }
+    .salon_mv_right {
+        width: 38.54%;
+        height: 100vh;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: 768px) {
+            width: 89.74%;
+            margin-left: auto;
+            height: 422px;
+            margin-top: 70px;
+        }
+    }
+}
+h1.common_ttl strong {
+    top: 0;
+}
+
+.salon_feature {
+    margin-top: 13rem;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding-bottom: 30px;
+    }
+    .container {
+        position: relative;
+        @media screen and (max-width: 768px) {
+            width: 79.48%;
+            
+        }
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../images/salon/feature_bg.jpg);
+        height: 90vh;
+        position: absolute;
+        bottom: -50%;
+        left: 0%;
+        @media screen and (max-width: 768px) {
+            height: 92vh;
+            bottom: -10%;
+        }
+    }
+    h1 {
+        text-align: right;
+        position: relative;
+    }
+    .feature_content {
+        strong {
+            font-size: clamp(20px, 2.5rem, 30px);
+            letter-spacing: 0.15em;
+            line-height: 1.7em;
+            display: block;
+            margin-bottom: 3rem;
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+        p {
+            font-size: clamp(14px, 1.6rem, 18px);
+            line-height: 1.7em;
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                margin-top: 10px;
+
+            }
+        }
+    }
+}
+
+.salon_staff {
+    margin-top: 30rem;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 12rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+     ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        @media screen and (max-width: 768px) {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        li {
+            width: 22.89%;
+            margin-right: 2.81124%;
+            text-align: center;
+            margin-bottom: 30px;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            @media screen and (max-width: 768px) {
+                width: 49%;
+                margin-right: 2%;
+                &:nth-child(2n) {
+                    margin-right: 0%;
+                }
+            }
+            figure {
+                margin-bottom: 2rem;
+                img {
+                    width: 100%;
+                }
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 10px;
+                }
+            }
+            figcaption {
+                p {
+                    margin-top: 2rem;
+                    @media screen and (max-width: 768px) {
+                        margin-top: 10px;
+                    }
+                    span {
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 2rem;
+                        @media screen and (max-width: 768px) {
+                            margin-bottom: 8px;
+                        }
+                        &:nth-of-type(1) {
+                            font-size: clamp(12px,1.6rem,18px);
+                        }
+                        &:nth-of-type(2) {
+                            font-size: clamp(14px,1.6rem,20px);
+                        }
+                    }
+                }
+            }
+        }
+     }
+}
+
+#menu {
+    @media screen and (max-width: 768px) {
+        margin-top: 50px;
+    }
+    .menu_container {
+        width: 64.5833%;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            width: 79.48%;
+        }
+        .flex {
+            flex-wrap: wrap;
+        }
+        dl {
+            width: 47%;
+            font-size: clamp(18px,2rem,22px);
+            margin-bottom: 8rem;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 0;
+            }
+            dt {
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #333;
+                margin-bottom: 2rem;
+                align-items: center;
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 15px;
+                    transform: rotate(180deg);
+                    transition: all 0.1s;
+                }
+                &.open {
+                    img {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            dd {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+                .flex {
+                    padding-bottom: 2rem;
+                    margin-bottom: 2rem;
+                    border-bottom: 1px dashed #333;
+                    @media screen and (max-width: 768px) {
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#salon_date {
+    margin-top: 15rem;
+    .salon_info {
+        width: 49.4%;
+        box-sizing: border-box;
+        padding-left: 18.229%;
+        padding-top: 10rem;
+        padding-bottom: 19rem;
+        background-color: #F2EBE9;
+        margin-top: 8rem;
+        margin-bottom: 15rem;
+        @media screen and (max-width: 768px) {
+            order: 2;
+            width: 94.87%;
+            padding-left: 10.229%;
+            padding-right: 7.229%;
+            text-align: center;
+            margin-top: -70px;
+        }
+        figure {
+            width: 30%;
+            @media screen and (max-width: 768px) {
+                width: 120px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                position: relative;
+                z-index: 10;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            font-size: clamp(16px,1.6rem,20px);
+            margin-bottom: 3rem;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+            a {
+                display: block;
+                text-decoration: underline;
+                color: #333;
+            }
+        }
+    }
+    a.reserve {
+        width: 180px;
+        font-size: clamp(16px,1.6rem,20px);
+        color: #fff;
+        background: #000;
+        text-align: center;
+        display: block;
+        padding: 12px 0;
+        @media screen and (max-width: 768px) {
+            margin: auto;
+        }
+    }
+}
+.salon_date_img {
+    width: 49.4%;
+    height: 30vw;
+    @media screen and (max-width: 768px) {
+        width: 89.74%;
+        height: 300px;
+        order: 1;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+    .slick-dots {
+        display: none!important;
+        text-align: left;
+        bottom: auto;
+      }
+    .slick-dots li button:before {
+        content: "";
+        width: 20px;
+        height: 1px;
+        display: block;
+        background: #000;
+        margin: 0 5px;
+    }      
+    .date_img {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 42vw;
+        @media screen and (max-width: 768px) {
+            height: 300px;
+        }
+    }
+}
+
+#instagram .rejouir_group {
+    background-color:#EDEDED; 
+}

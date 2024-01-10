@@ -1,0 +1,267 @@
+.company_mv {
+    margin-top: 22rem;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        margin-top: 0;
+    }
+    .company_mv_img {
+        width: 33.333%;
+        height: 44.8vw;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../images/company/company_mv.jpg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media screen and (max-width: 768px) {
+            width: 89.74%;
+            position: relative;
+            margin-left: auto;
+            height: 406px;
+        }
+    }
+    .company_container {
+        width: 64.583%;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            width: 79.48%;
+            margin-top: 30px;
+        }
+        .company_ttl {
+            h1 {
+                text-align: left;
+                padding-bottom: 10rem;
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 20px;
+                }
+            }
+            dl {
+                width: 62.096%;
+                font-size: clamp(14px,1.6rem,18px);
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #333;
+                justify-content: flex-start;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+                dt {
+                    width: 19.48%;
+                    @media screen and (max-width: 768px) {
+                        width: 30%;
+                    }
+                }
+                dd {
+                    @media screen and (max-width: 768px) {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.company_content {
+    margin-top: 30rem;
+    position: relative;
+    &::before {
+        content: "";
+        width: 76%;
+        height: 77%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../images/company/company_bg.jpg);
+        position: absolute;
+        left: 0;
+        top: 10%;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    .first_container {
+        width: 93.2291%;
+        margin-left: auto;
+        margin-bottom: 15rem;
+        position: relative;
+        @media screen and (max-width: 768px) {
+            width: 89.74%;
+            margin-right: auto;
+            margin-left: 0;
+            margin-bottom: 66px;
+        }
+        .flex {
+            align-items: center;
+            justify-content: flex-start;
+        }
+        figure {
+            width: 100%;
+            margin-right: 17rem;
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
+                margin-left: auto;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .company_text {
+            @media screen and (max-width: 768px) {
+                width: 88.5714%;
+                margin-right: 0;
+                margin-left: auto;
+                margin-top: 30px;
+            }
+            strong {
+                font-size: clamp(25px,2.5rem,30px);
+                line-height: 1.7em;
+                letter-spacing: 0.15em;
+                font-weight: normal;
+                display: block;
+                margin-bottom: 8rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-size: clamp(14px,1.6rem,18px);
+                line-height: 1.7em;
+                width: 45%;
+                font-weight: lighter;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .second_container {
+        width: 75.52%;
+        margin-left: 17.7083%;
+        position: relative;
+        z-index: 10;
+        @media screen and (max-width: 768px) {
+            width: 79.48%;
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 10.26%;
+            padding-left: 10.26%;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 195%;
+                background-image: url(../../images/company/company_bg.jpg);
+                @media screen and (max-width: 768px) {
+                    top: 2%;
+                }
+            }
+            .flex {
+                position: relative;
+            }
+        }
+        .company_text {
+            width: 54.275%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            h1 {
+                text-align: left;
+                @media screen and (max-width: 768px) {
+                    text-align: right;
+                    padding-bottom: 20px;
+                }
+            }
+            p {
+                font-size: clamp(14px,1.6rem,18px);
+                line-height: 1.7em;
+                margin-bottom: 2rem;
+                font-weight: lighter;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        figure {
+            width: 30%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+            figcaption {
+                margin-top: 3rem;
+                @media screen and (max-width: 768px) {
+                    margin-top: 20px;
+                }
+                span {
+                    display: block;
+                    font-size: clamp(14px,1.6rem,18px);
+                    margin-bottom: 2rem;
+                    @media screen and (max-width: 768px) {
+                        margin-bottom: 10px;
+                    }
+                    b {
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .third_container {
+        width: 93.2291%;
+        margin-left: auto;
+        margin-bottom: 19rem;
+        position: relative;
+        z-index: 10;
+        @media screen and (max-width: 768px) {
+            width: 89.74%;
+            margin-left: auto;
+            padding-bottom: 50px;
+        }
+        .flex {
+            justify-content: flex-start;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .company_text {
+            width: 50%;
+            padding-left: 17rem;
+            @media screen and (max-width: 768px) {
+                width: 88.57%;
+                padding-left: 0;
+                margin-right: auto;
+            }
+            p {
+                font-size: clamp(14px,1.6rem,18px);
+                line-height: 1.7em;
+                margin-bottom: 2rem;
+                font-weight: lighter;
+                @media screen and (max-width: 768px) {
+                    font-size: 13px;
+                    line-height: 2em;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+        figure {
+            width: 30%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

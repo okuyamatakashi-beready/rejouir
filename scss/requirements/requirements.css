@@ -1,0 +1,81 @@
+@media screen and (max-width: 768px) {
+  #requirements {
+    padding-top: 70px;
+  }
+}
+
+#staff_voice {
+  padding-top: 15rem;
+  padding-bottom: 19rem;
+}
+
+ul.require_tab {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #333;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+@media screen and (max-width: 768px) {
+  ul.require_tab {
+    display: none;
+  }
+}
+ul.require_tab li {
+  width: 25%;
+}
+ul.require_tab li:nth-child(1) a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+ul.require_tab li:nth-child(4) a {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: none;
+}
+ul.require_tab li a {
+  color: #333;
+  text-align: center;
+  font-size: clamp(16px, 1.8rem, 20px);
+  display: block;
+  padding: 2rem 0;
+  border-right: 1px solid #333;
+}
+ul.require_tab li a.active {
+  background-color: #CEEAEE;
+}
+
+.select_sp {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  position: relative;
+}
+.select_sp::after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  background-image: url(../../images/common/select_arrow.svg);
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 25%;
+}
+.select_sp select {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 11px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .flex.require_tab select {
+    display: none;
+  }
+}/*# sourceMappingURL=requirements.css.map */

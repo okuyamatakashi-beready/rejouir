@@ -1,0 +1,168 @@
+
+
+.online_mv {
+    padding-top: 22rem;
+    padding-bottom: 17rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 70px;
+    }
+    h1.common_ttl {
+        text-align: left;
+    }
+    .online_container {
+        width: 64.5833%;
+        margin-left: auto;
+        margin-right: auto;
+        .flex {
+            p {
+                font-size: clamp(14px,1.6rem,18px);
+                line-height: 1.7em;
+                margin-left: 8rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                    margin-left: 0;
+                    line-height: 2em;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            width: 79.48%;
+        }
+    }
+
+    .online_mv_img_wrap {
+        width: 82.29%;
+        margin-left: auto;
+        @media screen and (max-width: 768px) {
+            width: 89.74%;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+        .flex {
+            .left_img {
+                width: 56.32%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 27vw;
+                background-image: url(../../images/guidance/left_img.jpg);
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 204px;
+                }
+            }
+            .right_img {
+                width: 42.4050%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 27vw;
+                background-image: url(../../images/guidance/right_img.jpg);
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 204px;
+                }
+            }
+        }
+    }
+}
+
+#flow {
+    background-color: #EDEDED;
+    padding-bottom: 15rem;
+    padding-top: 15rem;
+    h2 {
+        text-align: left;
+        position: relative;
+        top: 0px;
+        margin-bottom: 8rem;
+        width: 40%;
+        
+        @media screen and (max-width: 768px) {
+            top: -17px;
+            text-align: left;
+            width: 100%;
+        }
+    }
+    
+    figure {
+        padding-bottom: 10rem;
+        border-bottom: 1px solid #333;
+        margin-bottom: 5rem;
+        @media screen and (max-width: 768px) {
+            border-bottom: none;
+        }
+        img {
+            width: 50%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+    p {
+        font-size: clamp(14px,1.6rem,18px);
+        line-height: 1.7em;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.flow_container {
+    width: 64.5833%;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+}
+#flow_contact {
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    h1 {
+        text-align: left;
+    }
+    .flow_contact_ttl {
+        justify-content: flex-start;
+        p {
+            margin-left: 13.5rem;
+            font-size: clamp(14px,1.6rem,18px);
+            line-height: 1.7em;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.tabcontent {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .active_tab {
+    display: block;
+  }
+  .tabcontent img {
+    width: 100%;
+    height: auto;
+  }
+  .step_wrap {
+    .tab {
+        border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            border-left: 1px solid #333;
+            margin-bottom: 30px;
+        button {
+            width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px 0;
+            border-right: 1px solid #333;
+            &.active {
+                background-color: #CEEAEE;
+            }
+        }
+    }
+  }
