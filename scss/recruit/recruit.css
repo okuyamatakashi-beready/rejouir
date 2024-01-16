@@ -302,9 +302,51 @@
     margin-top: 40px;
     overflow-x: hidden;
     padding-top: 40px;
+    padding-bottom: 10px;
   }
   #recruit_content .can_do .can_do_container .point_list .slick-list {
     overflow: visible;
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-prev {
+    background-image: url(../../images/recruit/prev_arrow.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    left: -10px;
+    z-index: 50;
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-prev::before {
+    display: none;
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-next {
+    background-image: url(../../images/recruit/next_arrow.svg);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    right: 10%;
+    z-index: 50;
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-next::before {
+    display: none;
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-dots {
+    left: 50%;
+    transform: translate(-57%, -100%);
+    z-index: 50;
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-dots li button:before {
+    font-size: 6px; /* ドットのサイズ */
+    color: transparent; /* 内側の色を透明に */
+    border: 2px solid #707070; /* 黒い線で円を描く */
+    border-radius: 50%; /* 円形にする */
+    content: ""; /* 標準のドット記号をクリア */
+    width: 10px; /* 幅 */
+    height: 10px; /* 高さ */
+    display: inline-block; /* ブロックとして表示 */
+    vertical-align: middle; /* 垂直方向の中央に配置 */
+  }
+  #recruit_content .can_do .can_do_container .point_list .slick-dots li.slick-active button:before {
+    background-color: #707070;
   }
 }
 #recruit_content .can_do .can_do_container .point_list .point {

@@ -147,6 +147,13 @@
                 'posts_per_page' => '1', //表示件数。-1なら全件表示
                 'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
                 'paged' => $paged,
+				'meta_query' => array(
+					array(
+						'key' => 'onoff',
+						'value' => '1',
+						'compare' => '='
+					)
+				)
 
             );
             ?>

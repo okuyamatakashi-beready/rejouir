@@ -106,7 +106,7 @@ $(document).ready(function() {
     $('.point_slider').slick({
       arrow: true,
       infinite: true,
-
+      dots: true,
       slidesToShow: 1.05,
       slidesToScroll: 1,
     });
