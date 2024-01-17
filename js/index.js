@@ -101,17 +101,21 @@ $(document).ready(function() {
   }
 });
 
-$(document).ready(function() {
-  if ($(window).width() < 768) { // スマホ幅以下の場合にSlickスライダーを実行
+if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  $(document).ready(function() {
     $('.point_slider').slick({
-      arrow: true,
+      arrows: true,
       infinite: true,
       dots: true,
-      slidesToShow: 1.05,
+      centerMode: false,
+      slidesToShow: 1,
       slidesToScroll: 1,
+      centerPadding: '0px',
     });
-  }
-});
+  });
+  
+}
+
 
 $(document).ready(function(){
   $('.slider-for').slick({

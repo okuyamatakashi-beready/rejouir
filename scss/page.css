@@ -325,6 +325,7 @@ h2.sec_ttl span {
 @media screen and (max-width: 768px) {
   .right_border {
     border-right: 4px #000 solid;
+    width: 1px;
   }
 }
 
@@ -343,6 +344,7 @@ h2.sec_ttl span {
 @media screen and (max-width: 768px) {
   .left_border {
     border-left: 4px #000 solid;
+    width: 1px;
   }
 }
 
