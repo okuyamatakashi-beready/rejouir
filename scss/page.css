@@ -683,7 +683,7 @@ h2.sec_ttl span {
   padding-top: 3.3rem;
 }
 .ft_contact_list li:nth-child(1) dd p {
-  margin-bottom: 54px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
   .ft_contact_list li:nth-child(1) dd p {
@@ -708,7 +708,7 @@ h2.sec_ttl span {
   padding: 8px 0;
 }
 .ft_contact_list li:nth-child(3) dd p {
-  margin-bottom: 47px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -753,7 +753,7 @@ h2.sec_ttl span {
 }
 .ft_contact_list li dl dd p {
   font-size: clamp(12px, 1.4rem, 14px);
-  margin-bottom: 15px;
+  margin-bottom: 36px;
 }
 @media screen and (max-width: 768px) {
   .ft_contact_list li dl dd p {

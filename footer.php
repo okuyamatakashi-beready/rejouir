@@ -90,6 +90,10 @@
 								<dt>
 									<img src="<?php echo get_template_directory_uri(); ?>/images/common/ft_tel.svg" alt="" class="">
 									<p>お電話でのお問い合わせ</p>
+									<p>
+										※リクルート用の番号です。<br>
+										予約は各店舗へお願いいたします。
+									</p>
 								</dt>
 								<dd>
 									<p><b>052-582-1098</b>（受付時間｜平日 9:00-17:00）</p>

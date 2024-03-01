@@ -683,13 +683,14 @@ h2.sec_ttl {
         dd {
             padding-top: 3.3rem;
             p {
-                margin-bottom: 54px;
+                margin-bottom: 80px;
                 @media screen and (max-width: 768px) {
                     margin-bottom: 16px;
                 }
             }
         }
     }
+    
     &:nth-child(2) {
         border-left: 1px solid #000;
         border-right: 1px solid #000;
@@ -708,7 +709,7 @@ h2.sec_ttl {
     &:nth-child(3) {
         dd {
             p {
-                margin-bottom: 47px;
+                margin-bottom: 10px;
                 margin-top: 10px;
                 @media screen and (max-width: 768px) {
                     margin-bottom: 16px;
@@ -745,7 +746,7 @@ h2.sec_ttl {
         dd {
             p {
                 font-size: clamp(12px,1.4rem,14px);
-                margin-bottom: 15px;
+                margin-bottom: 36px;
                 @media screen and (max-width: 768px) {
                     font-size: 11px;
                 }
