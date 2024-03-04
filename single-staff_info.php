@@ -47,7 +47,30 @@
     
     <div class="staff_info">
         <p>
-            <span><?php echo $salon_name;?></span>
+            <span>
+                <?php
+// ACFを使用してカスタムフィールドからタームIDを取得
+$salon_term_id = get_field('salon_name');
+
+// タームIDが取得できた場合の処理
+if (!empty($salon_term_id)) {
+    // タームIDからタームオブジェクトを取得
+    $salon_term = get_term($salon_term_id, 'salon');
+
+    // タームオブジェクトの取得に成功した場合、スラッグを表示
+    if (!is_wp_error($salon_term)) {
+        echo '' . esc_html($salon_term->name);
+    } else {
+        // タームオブジェクトの取得に失敗した場合のエラーメッセージ
+        echo 'Failed to retrieve salon information.';
+    }
+} else {
+    // カスタムフィールドからタームIDの取得に失敗した場合のメッセージ
+    echo 'No salon information available.';
+}
+?>
+
+            </span>
             <?php echo $catch;?>
         </p>
         <div class="flex">

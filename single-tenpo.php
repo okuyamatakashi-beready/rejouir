@@ -128,66 +128,7 @@
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
 
-            <?php
-            
-            $tenpo = get_the_ID();
-            $terms = get_the_terms($tenpo, 'salon');
-            if ($terms && !is_wp_error($terms)) {
-                // タームIDを取得
-                $term_id = $terms[0]->term_id;
-}
-            $args = array(
-                'post_type' => 'staff_info', // スタッフ投稿タイプ
-                'posts_per_page' => -1, // 全件取得
-                'meta_key' => 'priority', // 追記
-                'orderby' => 'meta_value_num', // 追記
-                'order' => 'ASC', // 追記
 
-                'meta_query' => array(
-                    array(
-                        'key' => 'salon_name', // カスタムフィールドで定義したカスタムタクソノミーのフィールド名
-                        'value' => $term_id, // 現在表示している店舗ページのID
-                        'compare' => '=' // フィールド値と比較する方法
-                    )
-                )
-            );
-            ?>
-            
-
-            <?php $my_query = new WP_Query( $args ); ?><!-- クエリの指定 -->
-
-            <?php if ( $my_query->have_posts() ) :
-
-                while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-                <?php 
-                $job = get_field('job');
-                $priority = get_field('priority');
-                $instagram = get_field('instagram');
-                $staff_slider = get_field('staff_slider');
-                $salon_name = get_field('salon_name');
-                
-                ?>
-
-            <li>
-                <figure>
-                    <img src="<?php echo $staff_slider; ?>" alt="" class="">
-                    <figcaption>
-                        <p>
-                            <span><?php echo $job; ?></span>
-                            <span><?php the_title(); ?></span>
-
-                        </p>
-                    </figcaption>
-                </figure>
-                <?php if($instagram): ?>
-                    <a href="<?php echo $instagram; ?>" class="staff_icon" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/salon/staff_insta_icon.svg" alt="" class="">
-                    </a>
-                <?php endif; ?>
-            </li>
-            <?php endwhile; ?>
-            <?php endif; ?>
-            <?php wp_reset_postdata(); ?>
 
         </ul>
     </div>
